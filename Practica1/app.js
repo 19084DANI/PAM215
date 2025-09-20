@@ -1,0 +1,6 @@
+
+let nombre = "armando";
+const edad = 25;
+//nombre = "ana maria";
+const saludo = "hola, " + nombre + " tienes " + edad + " anios.";
+console.log(saludo);
