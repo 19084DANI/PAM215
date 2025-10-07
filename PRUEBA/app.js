@@ -5,20 +5,24 @@
 19084 
 
 //booleanos
-true false
+true 
+false
 
 //arreglos
 ["ddd","ddd"];
 
 //objeto
-"dias" 365;
-"personas" 12;
-"calificacion" 65.6;
+"dias" = 365;
+"personas" = 12;
+"calificacion" = 65.6;
 
 //variable(var) y let son similares, para crear variables
 var nombre = "Daniyel";
 let user = "Daniyel";
-let num;
+let num
+
+
+;
 num = 84;
 
 //con el comando "const" la variable sera fija
