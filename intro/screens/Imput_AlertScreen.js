@@ -1,7 +1,7 @@
 import { Text, StyleSheet, View } from 'react-native'
 
 
-export default function Import_AlertScreen() {
+export default function Imput_AlertScreen() {
 
     return (
       <View>

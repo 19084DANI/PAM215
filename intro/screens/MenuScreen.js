@@ -2,6 +2,7 @@ import { Text, StyleSheet, View } from 'react-native'
 import React, { Component, useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
+import Imput_AlertScreen from './Imput_AlertScreen'
 import { Button } from 'react-native-web';
 
 export default function MenuScreen() {
