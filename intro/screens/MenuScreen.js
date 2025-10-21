@@ -3,6 +3,8 @@ import React, { Component, useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import Imput_AlertScreen from './Imput_AlertScreen'
+import Black_SlapScreen from './Back_SlapScreen'
+
 import { Button } from 'react-native-web';
 
 export default function MenuScreen() {
@@ -32,7 +34,7 @@ export default function MenuScreen() {
             default:
 
             return (
-                <View>
+                <View style={styles.container}>
                 <Text>MenuScreen</Text>
                 <Button onPress={()=> setScreen('contador') } title='Practica: Contador'/>
                 <Button onPress={()=> setScreen('botones') } title='Practica: Buttons'/>
@@ -51,4 +53,12 @@ export default function MenuScreen() {
 
   }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+    flex: 1,
+    backgroundColor: '#cacacaff',
+    alignItems: 'center', // start < -- center -- > end
+    justifyContent: 'center',
+    marginTop:15,
+  },
+});
