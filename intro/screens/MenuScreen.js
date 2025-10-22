@@ -3,7 +3,7 @@ import React, { Component, useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import Imput_AlertScreen from './Imput_AlertScreen'
-import Black_SlapScreen from './Back_SlapScreen'
+import Black_SplashScreen from './Back_SplashScreen'
 
 import { Button } from 'react-native-web';
 
@@ -19,7 +19,7 @@ export default function MenuScreen() {
         case 'Imput':
             return<Imput_AlertScreen/>;
         case 'back':
-            return<Black_SlapScreen/>;
+            return<Black_SplashScreen/>;
         case 'scroll':
             return<ScrollScreen/>;
         case 'indicador':
@@ -35,7 +35,7 @@ export default function MenuScreen() {
 
             return (
                 <View style={styles.container}>
-                <Text>MenuScreen</Text>
+                <Text style={styles.titulo}>MenuScreen</Text>
                 <Button onPress={()=> setScreen('contador') } title='Practica: Contador'/>
                 <Button onPress={()=> setScreen('botones') } title='Practica: Buttons'/>
                 <Button onPress={()=> setScreen('Imput') } title='Practica: imput'/>    
@@ -56,9 +56,20 @@ export default function MenuScreen() {
 const styles = StyleSheet.create({
     container: {
     flex: 1,
-    backgroundColor: '#cacacaff',
+    backgroundColor: '#ffffffff',
     alignItems: 'center', // start < -- center -- > end
     justifyContent: 'center',
     marginTop:15,
   },
+  titulo:{
+    fontFamily: 'Times New Roman',
+    fontWeight: 'bold',
+    fontSize: 40,
+    color: 'black',
+    textDecorationLine: 'underline',
+    marginBlock: 15,
+
+  },
+ /* marginTop
+  gap*/
 });
