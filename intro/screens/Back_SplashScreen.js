@@ -3,7 +3,7 @@ import { Text, StyleSheet, View, ImageBackground,
 import React,{useEffect,useState} from 'react';
 
 
-export default function Black_SplashScreen() {
+export default function Back_SplashScreen() {
   const[cargando,setcargador]=useState(true);
   const desvanecido = new Animated.Value(1);
 

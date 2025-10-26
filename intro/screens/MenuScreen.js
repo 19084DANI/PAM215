@@ -4,6 +4,7 @@ import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import Imput_AlertScreen from './Imput_AlertScreen'
 import Black_SplashScreen from './Back_SplashScreen'
+import Repaso1 from './Repaso1'
 
 import { Button } from 'react-native-web';
 
@@ -30,6 +31,8 @@ export default function MenuScreen() {
             return<ModalScreen/>;
         case 'sheet':
             return<uttonSheetScreen/>;
+        case 'Repaso1':
+            return<Repaso1/>;
         case 'menu':
             default:
 
@@ -45,7 +48,8 @@ export default function MenuScreen() {
                 <Button onPress={()=> setScreen('flat') } title='Practica: flatprac'/>  
                 <Button onPress={()=> setScreen('modal') } title='Practica: modal'/>     
                 <Button onPress={()=> setScreen('sheet') } title='Practica: sheet'/>
-                <Button onPress={()=> setScreen('menu') } title='Practica: menu'/>                                 
+                <Button onPress={()=> setScreen('menu') } title='Practica: menu'/>    
+                <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>                         
                 </View>
             )
 
