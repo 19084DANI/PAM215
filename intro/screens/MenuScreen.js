@@ -5,6 +5,11 @@ import BotonesScreen from './BotonesScreen'
 import Imput_AlertScreen from './Imput_AlertScreen'
 import Black_SplashScreen from './Back_SplashScreen'
 import Repaso1 from './Repaso1'
+import ScrollScreen from './ScrollScreen'
+import IndicatorScreen from './IndicatorScreen'
+import Flat_ListScreen from './Flat_ListScreen'
+import ModalScreen from './ModalScreen'
+
 
 import { Button } from 'react-native-web';
 
@@ -49,7 +54,7 @@ export default function MenuScreen() {
                 <Button onPress={()=> setScreen('modal') } title='Practica: modal'/>     
                 <Button onPress={()=> setScreen('sheet') } title='Practica: sheet'/>
                 <Button onPress={()=> setScreen('menu') } title='Practica: menu'/>    
-                <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>                         
+                <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>                       
                 </View>
             )
 
