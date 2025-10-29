@@ -38,12 +38,15 @@ export default function MenuScreen() {
             return<uttonSheetScreen/>;
         case 'Repaso1':
             return<Repaso1/>;
+            case 'flat':
+            return<Flat_ListScreen/>;
         case 'menu':
             default:
 
             return (
                 <View style={styles.container}>
                 <Text style={styles.titulo}>MenuScreen</Text>
+                <View style={styles.conteinenrBotones}>
                 <Button onPress={()=> setScreen('contador') } title='Practica: Contador'/>
                 <Button onPress={()=> setScreen('botones') } title='Practica: Buttons'/>
                 <Button onPress={()=> setScreen('Imput') } title='Practica: imput'/>    
@@ -54,7 +57,10 @@ export default function MenuScreen() {
                 <Button onPress={()=> setScreen('modal') } title='Practica: modal'/>     
                 <Button onPress={()=> setScreen('sheet') } title='Practica: sheet'/>
                 <Button onPress={()=> setScreen('menu') } title='Practica: menu'/>    
-                <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>                       
+                <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>  
+
+                </View>
+                     
                 </View>
             )
 
@@ -77,8 +83,9 @@ const styles = StyleSheet.create({
     color: 'black',
     textDecorationLine: 'underline',
     marginBlock: 15,
-
   },
- /* marginTop
-  gap*/
+  conteinenrBotones:{
+  marginTop:20,
+  gap:10,
+  },
 });
