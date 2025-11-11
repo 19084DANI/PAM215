@@ -12,6 +12,7 @@ const mostrarAlerta = () => {
     return;
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!Terms) {
     Alert.alert("Debe aceptar los términos y condiciones primero"); //mivile
     alert("Debe aceptar los términos y condiciones primero"); // para web
