@@ -9,6 +9,7 @@ import ScrollScreen from './ScrollScreen'
 import IndicatorScreen from './IndicatorScreen'
 import Flat_ListScreen from './Flat_ListScreen'
 import ModalScreen from './ModalScreen'
+import RepasoEx from './RepasoEx'
 
 
 import { Button } from 'react-native-web';
@@ -40,6 +41,8 @@ export default function MenuScreen() {
             return<Repaso1/>;
             case 'flat':
             return<Flat_ListScreen/>;
+        case 'examen':
+            return<RepasoEx/>;
         case 'menu':
             default:
 
@@ -56,7 +59,7 @@ export default function MenuScreen() {
                 <Button onPress={()=> setScreen('flat') } title='Practica: flatprac'/>  
                 <Button onPress={()=> setScreen('modal') } title='Practica: modal'/>     
                 <Button onPress={()=> setScreen('sheet') } title='Practica: sheet'/>
-                <Button onPress={()=> setScreen('menu') } title='Practica: menu'/>    
+                <Button onPress={()=> setScreen('examen') } title='Practica: examen'/>    
                 <Button onPress={()=> setScreen ('Repaso1') } title='Practica : repaso1'/>  
 
                 </View>
