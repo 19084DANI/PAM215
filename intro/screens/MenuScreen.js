@@ -10,7 +10,7 @@ import IndicatorScreen from './IndicatorScreen'
 import Flat_ListScreen from './Flat_ListScreen'
 import ModalScreen from './ModalScreen'
 import RepasoEx from './RepasoEx'
-
+import BottomScreen from './BottomScreen'
 
 import { Button } from 'react-native-web';
 
@@ -36,7 +36,7 @@ export default function MenuScreen() {
         case 'modal':
             return<ModalScreen/>;
         case 'sheet':
-            return<uttonSheetScreen/>;
+            return<BottomScreen/>;
         case 'Repaso1':
             return<Repaso1/>;
             case 'flat':
